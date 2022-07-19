@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\ClientCreationView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ClientsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ContractCreationView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\ContractsView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\LoadBarView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Views\OrderEditingView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Resources\Dictionary\TextStyles.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ClientCreationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ClientsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ContractCreationView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\ContractsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\LoadBarView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Views\OrderEditingView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

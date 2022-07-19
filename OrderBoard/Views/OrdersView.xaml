@@ -1,0 +1,68 @@
+﻿<Page x:Class="OrderBoard.Views.OrdersView"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OrderBoard.Views"
+      xmlns:b="http://schemas.microsoft.com/xaml/behaviors"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="OrdersView">
+    <Grid>
+        <ListView ItemsSource="{Binding List, 
+            Mode=TwoWay,
+            UpdateSourceTrigger=PropertyChanged}" >
+            <ListView.View>
+                <GridView AllowsColumnReorder="False">
+                    <GridViewColumn Header="Номер">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <StackPanel Orientation="Horizontal">
+                                    <Rectangle Width="5" Margin="-5 0 30 0" VerticalAlignment="Stretch">
+                                        <Rectangle.Style>
+                                            <Style>
+                                                <Style.Triggers>
+                                                    <DataTrigger Binding="{Binding Order.OrderPriority}" Value="Low">
+                                                        <Setter Property="Rectangle.Fill" Value="Green"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding Order.OrderPriority}" Value="Middle">
+                                                        <Setter Property="Rectangle.Fill" Value="Yellow"/>
+                                                    </DataTrigger>
+                                                    <DataTrigger Binding="{Binding Order.OrderPriority}" Value="High">
+                                                        <Setter Property="Rectangle.Fill" Value="Red"/>
+                                                    </DataTrigger>
+                                                </Style.Triggers>
+                                            </Style>
+                                        </Rectangle.Style>
+                                    </Rectangle>
+                                    <TextBlock Text="{Binding Order.OrderId}"/>
+                                </StackPanel>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Order.Name}">Название</GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Order.ClientData.Name}">Клиент</GridViewColumn>
+                    <GridViewColumn Header="Статус">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <ComboBox ItemsSource="{Binding CurrentStatusList,
+                                    Mode=TwoWay,
+                                    UpdateSourceTrigger=PropertyChanged}" SelectedItem="{Binding CurrentStatus,Mode=TwoWay,
+                                    UpdateSourceTrigger=PropertyChanged}"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Действия">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button Background="White" BorderThickness="0" Command="{Binding OrderEditCommand}">
+                                    <Image Source="/Resources/Images/ButtonIcons/pencil.png" Width="25"/>
+                                </Button>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Page>

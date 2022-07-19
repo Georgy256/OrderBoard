@@ -1,0 +1,51 @@
+﻿<Window x:Class="OrderBoard.Views.ContractCreationView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OrderBoard.Views"
+        mc:Ignorable="d"
+        Title="ContractCreationView" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition Height="auto"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Style="{StaticResource Title}">Новый договор</TextBlock>
+        <StackPanel Grid.Row="1">
+            <TextBlock Style="{StaticResource Prompt}" Margin="0 10 0 5">Название</TextBlock>
+            <TextBox Style="{StaticResource Text}" Text="{Binding DataInput.Name}"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2">
+            <TextBlock Style="{StaticResource Prompt}" Margin="0 10 0 5">Клиент</TextBlock>
+            <ComboBox ItemsSource="{Binding Clients}" DisplayMemberPath="Name" SelectedItem="{Binding DataInput.Client,
+                UpdateSourceTrigger=PropertyChanged,
+                Mode=TwoWay}"/>
+        </StackPanel>
+        <WrapPanel Grid.Row="3" Orientation="Horizontal" >
+            <StackPanel HorizontalAlignment="Left">
+                <TextBlock Style="{StaticResource Prompt}" Margin="0 10 0 5">Дата начала</TextBlock>
+                <DatePicker
+                        IsDropDownOpen="False" 
+                        SelectedDateFormat="Short" SelectedDate="{Binding DataInput.StartDate}" />
+            </StackPanel>
+            <StackPanel Margin="500 0 0 0" HorizontalAlignment="Right">
+                <TextBlock Style="{StaticResource Prompt}" Margin="0 10 0 5">Дата окончания</TextBlock>
+                <DatePicker
+                        IsDropDownOpen="False" 
+                        SelectedDateFormat="Short" SelectedDate="{Binding DataInput.EndDate}" />
+            </StackPanel>
+        </WrapPanel>
+        <StackPanel Grid.Row="4">
+            <TextBlock Style="{StaticResource Prompt}" Margin="0 10 0 5">Стоимость</TextBlock>
+            <TextBox Style="{StaticResource Text}" Text="{Binding DataInput.Price}"/>
+        </StackPanel>
+        <Button Grid.Row="5" Content="Добавить" Command="{Binding AddDataCommand}"
+                Width="150" Height="40" 
+                FontSize="18" HorizontalAlignment="Left" Background="LightGreen" 
+                VerticalAlignment="Bottom"/>
+    </Grid>
+</Window>
