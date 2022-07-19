@@ -29,7 +29,7 @@ namespace OrderBoard.Models
 
         public void AddContract(ContractData contract)
         {
-            contract.ClientId = contract.Client.ClientId;
+            contract.ClientId = contract.Client!.ClientId;
             contract.Client = null;
             _dataService.AddData(contract);
             OnModelChanged();

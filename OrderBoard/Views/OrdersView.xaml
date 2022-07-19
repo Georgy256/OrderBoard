@@ -14,11 +14,11 @@
             UpdateSourceTrigger=PropertyChanged}" >
             <ListView.View>
                 <GridView AllowsColumnReorder="False">
-                    <GridViewColumn Header="Номер">
+                    <GridViewColumn Header="Приоритет">
                         <GridViewColumn.CellTemplate>
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
-                                    <Rectangle Width="5" Margin="-5 0 30 0" VerticalAlignment="Stretch">
+                                    <Rectangle Width="5" Margin="-5 0 10 0" VerticalAlignment="Stretch">
                                         <Rectangle.Style>
                                             <Style>
                                                 <Style.Triggers>
@@ -35,11 +35,12 @@
                                             </Style>
                                         </Rectangle.Style>
                                     </Rectangle>
-                                    <TextBlock Text="{Binding Order.OrderId}"/>
+                                    <TextBlock Text="{Binding Order.OrderPriority}"/>
                                 </StackPanel>
                             </DataTemplate>
                         </GridViewColumn.CellTemplate>
                     </GridViewColumn>
+                    <GridViewColumn DisplayMemberBinding="{Binding Order.OrderId}">Номер</GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding Order.Name}">Название</GridViewColumn>
                     <GridViewColumn DisplayMemberBinding="{Binding Order.ClientData.Name}">Клиент</GridViewColumn>
                     <GridViewColumn Header="Статус">

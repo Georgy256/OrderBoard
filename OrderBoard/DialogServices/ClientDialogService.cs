@@ -28,7 +28,7 @@ namespace OrderBoard.DialogServices
 
         private void AddData(object? parameter)
         {
-            AppController.Instance.GetActiveWindow().DialogResult = true;
+            AppController.Instance.GetActiveWindow()!.DialogResult = true;
         }
 
         private bool CanAddData(object? parameter)

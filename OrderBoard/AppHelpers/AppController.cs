@@ -33,7 +33,7 @@ namespace OrderBoard.AppHelpers
             }
         }
 
-        public Window GetActiveWindow()
+        public Window? GetActiveWindow()
         {
             WindowCollection windowCollection = Application.Current.Windows;
             foreach(Window window in windowCollection)

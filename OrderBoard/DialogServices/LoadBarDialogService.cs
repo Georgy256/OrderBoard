@@ -20,7 +20,7 @@ namespace OrderBoard.DialogServices
 
         public void Close()
         {
-            AppController.Instance.GetActiveWindow().Close();
+            AppController.Instance.GetActiveWindow()!.Close();
         }
     }
 }

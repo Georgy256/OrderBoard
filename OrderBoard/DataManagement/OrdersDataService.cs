@@ -11,7 +11,7 @@ namespace OrderBoard.DataManagement
 {
     public class OrdersDataService : IChangeableDataService<OrderData>
     {
-        private SqlServerHelper _dbHelper;
+        private readonly SqlServerHelper _dbHelper;
 
         public OrdersDataService()
         {
@@ -46,7 +46,7 @@ namespace OrderBoard.DataManagement
                     _dbHelper.SaveChanges();
                     success = true;
                 }
-                catch (InvalidOperationException ex)
+                catch (InvalidOperationException)
                 {
                     _dbHelper.OrderDatas.Remove(data);
                 }

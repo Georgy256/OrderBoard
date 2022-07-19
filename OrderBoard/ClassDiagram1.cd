@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="OrderBoard.Models.ClientsModel" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAIQAAIAAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>Models\ClientsModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OrderBoard.Models.ContractsModel" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAAAAAAMQAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ContractsModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OrderBoard.Models.OrdersModel" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAoAAAAAAAAAAIQAAIAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\OrdersModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OrderBoard.DataManagement.ClientsDataService" BaseTypeListCollapsed="true">
+    <Position X="12.75" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>DataManagement\ClientsDataService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OrderBoard.DataManagement.ContractsDataService" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>DataManagement\ContractsDataService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OrderBoard.DataManagement.OrdersDataService" BaseTypeListCollapsed="true">
+    <Position X="17" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAYAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>DataManagement\OrdersDataService.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OrderBoard.ViewModels.AppControlViewModel" Collapsed="true">
+    <Position X="7.5" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AppControlViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderBoard.ViewModels.ClientsViewModel">
+    <Position X="15.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAQAAAAAAAAAAAAAAAIAAAAACAAAAAAA=</HashCode>
+      <FileName>ViewModels\ClientsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderBoard.ViewModels.ContractsViewModel">
+    <Position X="13.75" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAAQAAAAAAAAAAAAAAAAAAAAACAAIAAAA=</HashCode>
+      <FileName>ViewModels\ContractsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderBoard.ViewModels.ListViewModel&lt;T&gt;" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAAFAAAAAAAAAIAAAAAAAgI=</HashCode>
+      <FileName>ViewModels\ListViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OrderBoard.ViewModels.OrderCreationViewModel">
+    <Position X="2.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>ViewModels\OrderCreationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderBoard.ViewModels.OrderEditingViewModel">
+    <Position X="5.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAgAQAAAAAAAA=</HashCode>
+      <FileName>ViewModels\OrderEditingViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderBoard.ViewModels.OrderFormViewModel">
+    <Position X="4" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAIIIAEAAAAAAACAAAAAAAAQAAAAAABAIAAAAAAA=</HashCode>
+      <FileName>ViewModels\OrderFormViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderBoard.ViewModels.OrdersViewModel" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAFAAAAAAAAABAAAAAABAI=</HashCode>
+      <FileName>ViewModels\OrdersViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="OrderBoard.ViewModels.OrderViewModel">
+    <Position X="11" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEIAAAAAAAAEAAAAAAAAAAAQAAACAAAgAgCAAAAAAA=</HashCode>
+      <FileName>ViewModels\OrderViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OrderBoard.ViewModels.PageManagerViewModel" Collapsed="true">
+    <Position X="7.5" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAEUAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\PageManagerViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="OrderBoard.Models.IModel&lt;T&gt;">
+    <Position X="3.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\IModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OrderBoard.DataManagement.IChangeableDataService&lt;T&gt;">
+    <Position X="12.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataManagement\IChangeableDataService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OrderBoard.DataManagement.IDataService&lt;T&gt;">
+    <Position X="12.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAYAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>DataManagement\IDataService.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="OrderBoard.ViewModels.IListViewModel&lt;T&gt;" Collapsed="true">
+    <Position X="7.5" Y="13" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>ViewModels\IListViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
